@@ -715,3 +715,30 @@ Completed in 183ms (DB: 4) | 200 [http://uva.ferentschik.de/news]
 Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:14) [GET]
   Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
 Completed in 97ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 17:54:54) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 194ms (DB: 9) | 200 [http://uva.ferentschik.de/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 17:54:54) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["reset.css"], "controller"=>"site"}
+Completed in 20ms (DB: 1) | 200 [http://uva.ferentschik.de/reset.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 17:54:54) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["styles.css"], "controller"=>"site"}
+Completed in 51ms (DB: 4) | 200 [http://uva.ferentschik.de/styles.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 17:54:55) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 145ms (DB: 5) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 17:55:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 113ms (View: 104, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages]
