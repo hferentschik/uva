@@ -1,0 +1,717 @@
+# Logfile created on Fri Feb 05 09:34:05 -0600 2010
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:23:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 190ms (DB: 12) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:23:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 141ms (DB: 4) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:29:38) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 116ms (DB: 6) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:30:02) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 145ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:30:15) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 106ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:33:10) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 112ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:39:35) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 136ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:39:38) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 111ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:39:42) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 152ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:39:47) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 105ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:40:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 113ms (DB: 2) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:50:46) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 149ms (DB: 9) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:50:52) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["~uvatigre", "uva-tigre"], "controller"=>"site"}
+Completed in 112ms (DB: 3) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 11:52:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 192ms (DB: 10) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing Admin::WelcomeController#index (for 66.187.233.202 at 2010-02-05 11:57:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://174.121.64.34/~uvatigre/uva-tigre/admin/pages
+Completed in 3ms (DB: 0) | 302 Found [http://174.121.64.34/~uvatigre/uva-tigre/admin]
+
+
+Processing Admin::PagesController#index (for 66.187.233.202 at 2010-02-05 11:57:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://174.121.64.34/~uvatigre/uva-tigre/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://174.121.64.34/~uvatigre/uva-tigre/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:57:56) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 22ms (View: 20, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:05) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:15) [POST]
+  Parameters: {"remember_me"=>"1", "action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:24) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:35) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 2) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:43) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 2) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:58:46) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:59:14) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 11:59:26) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 51ms (View: 5, DB: 5) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:03:37) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 36ms (View: 23, DB: 3) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:03:43) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 2) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:03:46) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:03:48) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 8ms (View: 5, DB: 2) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:05:48) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 47ms (View: 29, DB: 7) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 66.187.233.202 at 2010-02-05 12:05:54) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"iNxOrrqIm7+H+LoJi3fzUbuxf+Mup2JL3rxJ5cq3a5k=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Redirected to http://174.121.64.34/~uvatigre/uva-tigre/admin/pages
+Completed in 3ms (DB: 1) | 302 Found [http://174.121.64.34/~uvatigre/uva-tigre/admin/login]
+
+
+Processing Admin::PagesController#index (for 66.187.233.202 at 2010-02-05 12:05:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 116ms (View: 98, DB: 12) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 66.187.233.202 at 2010-02-05 12:06:03) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 263ms (View: 252, DB: 7) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/pages/9/edit]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 12:06:33) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["pages", "9"], "controller"=>"site"}
+Completed in 181ms (DB: 8) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/pages/9]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 12:06:44) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["page", "9"], "controller"=>"site"}
+Completed in 149ms (DB: 4) | 404 [http://174.121.64.34/~uvatigre/uva-tigre/page/9]
+
+
+Processing Admin::PagesController#index (for 66.187.233.202 at 2010-02-05 12:06:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 114ms (View: 106, DB: 4) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 66.187.233.202 at 2010-02-05 12:07:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 143ms (View: 137, DB: 3) | 200 OK [http://174.121.64.34/~uvatigre/uva-tigre/admin/pages/9/edit]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 12:07:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 223ms (DB: 6) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 12:12:24) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["tour"], "controller"=>"site"}
+Completed in 78ms (DB: 3) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/tour]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 12:12:59) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 170ms (DB: 3) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 174.49.191.44 at 2010-02-05 12:29:36) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 183ms (DB: 9) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 66.187.233.202 at 2010-02-05 14:40:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 288ms (DB: 9) | 200 [http://174.121.64.34/~uvatigre/uva-tigre/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:01) [GET]
+  Parameters: {"action"=>"show_page", "url"=>"/", "controller"=>"site"}
+Completed in 244ms (DB: 8) | 200 [http://uva.ferentschik.de/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:02) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["reset.css"], "controller"=>"site"}
+Completed in 22ms (DB: 2) | 200 [http://uva.ferentschik.de/reset.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:02) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["styles.css"], "controller"=>"site"}
+Completed in 51ms (DB: 4) | 200 [http://uva.ferentschik.de/styles.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:03) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 172ms (DB: 5) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:07) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["tour"], "controller"=>"site"}
+Completed in 71ms (DB: 2) | 200 [http://uva.ferentschik.de/tour]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:09) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["news"], "controller"=>"site"}
+Completed in 182ms (DB: 6) | 200 [http://uva.ferentschik.de/news]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:11) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["locations"], "controller"=>"site"}
+Completed in 72ms (DB: 3) | 200 [http://uva.ferentschik.de/locations]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:25) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 115ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:14:51) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["about"], "controller"=>"site"}
+Completed in 119ms (DB: 3) | 200 [http://uva.ferentschik.de/about]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:15:04) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 110ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:17:18) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 115ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:18:07) [GET]
+  Parameters: {"action"=>"show_page", "url"=>["video", "player.swf"], "controller"=>"site"}
+Completed in 146ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:19:41) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 132ms (DB: 7) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing Admin::WelcomeController#index (for 201.253.120.202 at 2010-02-05 16:19:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 64ms (DB: 0) | 302 Found [http://uva.ferentschik.de/admin]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:19:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/login
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::WelcomeController#login (for 201.253.120.202 at 2010-02-05 16:19:48) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 23ms (View: 20, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 201.253.120.202 at 2010-02-05 16:19:55) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 6ms (DB: 1) | 302 Found [http://uva.ferentschik.de/admin/login]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:19:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 98ms (View: 91, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:19:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 232ms (View: 228, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/pages/9/edit]
+
+
+Processing Admin::PagesController#update (for 201.253.120.202 at 2010-02-05 16:20:25) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "id"=>"9", "page"=>{"class_name"=>"", "slug"=>"about", "title"=>"About", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "_delete"=>"", "id"=>"10", "content"=>"h2. About Uva\r\n\r\nfooo"}, "1"=>{"name"=>"sidebar", "filter_id"=>"", "_delete"=>"", "id"=>"11", "content"=>"<div class=\"box\" style=\"margin-top:50px\">\r\n  <h3>Main office</h3>\r\n  222 Address Street<br />\r\n  Portland, OR 97008<br />\r\n  (503) 545-7777\r\n</div>\r\n"}}, "lock_version"=>"9", "breadcrumb"=>"About", "parent_id"=>"1", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 126ms (DB: 52) | 302 Found [http://uva.ferentschik.de/admin/pages/9]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:20:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 110ms (View: 102, DB: 5) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:20:42) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 172ms (DB: 5) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:20:44) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+Completed in 82ms (DB: 3) | 200 [http://uva.ferentschik.de/about]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:20:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 145ms (View: 140, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/pages/9/edit]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:21:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 107ms (View: 102, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/11/edit]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:21:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 136ms (View: 131, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/7/edit]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:22:00) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 129ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:22:05) [GET]
+  Parameters: {"url"=>["tour"], "action"=>"show_page", "controller"=>"site"}
+Completed in 133ms (DB: 3) | 200 [http://uva.ferentschik.de/tour]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:22:09) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 120ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing Admin::WelcomeController#index (for 201.253.120.202 at 2010-02-05 16:24:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 2ms (DB: 0) | 302 Found [http://uva.ferentschik.de/admin/]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:24:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 110ms (View: 104, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::WelcomeController#logout (for 201.253.120.202 at 2010-02-05 16:24:35) [GET]
+  Parameters: {"action"=>"logout", "controller"=>"admin/welcome"}
+Redirected to http://uva.ferentschik.de/admin/login
+Completed in 9ms (DB: 5) | 302 Found [http://uva.ferentschik.de/admin/logout]
+
+
+Processing Admin::WelcomeController#login (for 201.253.120.202 at 2010-02-05 16:24:35) [GET]
+  Parameters: {"action"=>"login", "controller"=>"admin/welcome"}
+Rendering template within layouts/application
+Rendering admin/welcome/login
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://uva.ferentschik.de/admin/login]
+
+
+Processing Admin::WelcomeController#login (for 201.253.120.202 at 2010-02-05 16:28:05) [POST]
+  Parameters: {"action"=>"login", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "controller"=>"admin/welcome", "user"=>{"password"=>"[FILTERED]", "login"=>"admin"}}
+Redirected to http://uva.ferentschik.de/admin/welcome
+Completed in 3ms (DB: 1) | 302 Found [http://uva.ferentschik.de/admin/login]
+
+
+Processing Admin::WelcomeController#index (for 201.253.120.202 at 2010-02-05 16:28:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/welcome"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 2ms (DB: 0) | 302 Found [http://uva.ferentschik.de/admin/welcome]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:28:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 104ms (View: 99, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:28:09) [GET]
+  Parameters: {"action"=>"index", "page_id"=>"4", "level"=>"1", "controller"=>"admin/pages"}
+Rendering admin/pages/children
+Completed in 28ms (View: 20, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/4/children?level=1]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:28:19) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 146ms (View: 92, DB: 52) | 200 OK [http://uva.ferentschik.de/admin/pages/1/edit]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:28:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"6", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 94ms (View: 89, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/6/edit]
+
+
+Processing Admin::PagesController#new (for 201.253.120.202 at 2010-02-05 16:29:06) [GET]
+  Parameters: {"action"=>"new", "page_id"=>"4", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/new
+Completed in 147ms (View: 139, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/4/children/new]
+
+
+Processing Admin::PagesController#create (for 201.253.120.202 at 2010-02-05 16:29:22) [POST]
+  Parameters: {"commit"=>"Create Page", "action"=>"create", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "page"=>{"class_name"=>"", "slug"=>"new-article", "title"=>"new article", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "_delete"=>"", "id"=>"", "content"=>"this is a new article"}, "1"=>{"name"=>"extended", "filter_id"=>"", "_delete"=>"", "id"=>"", "content"=>""}}, "lock_version"=>"0", "breadcrumb"=>"new article", "parent_id"=>"4", "status_id"=>"1", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 41ms (DB: 5) | 302 Found [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:29:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 172ms (View: 162, DB: 7) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:29:42) [GET]
+  Parameters: {"action"=>"edit", "id"=>"15", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 143ms (View: 138, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/15/edit]
+
+
+Processing Admin::PagesController#update (for 201.253.120.202 at 2010-02-05 16:30:27) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "id"=>"15", "page"=>{"class_name"=>"", "slug"=>"dog-rescued-from-cruel-owner", "title"=>"Dog rescued from cruel owner", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "_delete"=>"", "id"=>"27", "content"=>"One more success story ..."}, "1"=>{"name"=>"extended", "filter_id"=>"", "_delete"=>"", "id"=>"28", "content"=>""}}, "lock_version"=>"0", "breadcrumb"=>"Dog rescued from cruel owner", "parent_id"=>"4", "status_id"=>"1", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 39ms (DB: 5) | 302 Found [http://uva.ferentschik.de/admin/pages/15]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:30:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 168ms (View: 158, DB: 7) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:30:32) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+Completed in 179ms (DB: 5) | 200 [http://uva.ferentschik.de/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:30:32) [GET]
+  Parameters: {"url"=>["styles.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 25ms (DB: 2) | 200 [http://uva.ferentschik.de/styles.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:30:33) [GET]
+  Parameters: {"url"=>["reset.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 49ms (DB: 5) | 200 [http://uva.ferentschik.de/reset.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:30:34) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 180ms (DB: 7) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:31:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"15", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 219ms (View: 212, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/15/edit]
+
+
+Processing Admin::PagesController#update (for 201.253.120.202 at 2010-02-05 16:31:24) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "id"=>"15", "page"=>{"class_name"=>"", "slug"=>"dog-rescued-from-cruel-owner", "title"=>"Dog rescued from cruel owner", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"", "_delete"=>"", "id"=>"27", "content"=>"One more success story ..."}, "1"=>{"name"=>"extended", "filter_id"=>"", "_delete"=>"", "id"=>"28", "content"=>""}}, "lock_version"=>"1", "breadcrumb"=>"Dog rescued from cruel owner", "parent_id"=>"4", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 42ms (DB: 4) | 302 Found [http://uva.ferentschik.de/admin/pages/15]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:31:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 169ms (View: 159, DB: 7) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:29) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+Completed in 200ms (DB: 6) | 200 [http://uva.ferentschik.de/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:29) [GET]
+  Parameters: {"url"=>["reset.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 23ms (DB: 2) | 200 [http://uva.ferentschik.de/reset.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:29) [GET]
+  Parameters: {"url"=>["styles.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 83ms (DB: 2) | 200 [http://uva.ferentschik.de/styles.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:30) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 124ms (DB: 3) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:53) [GET]
+  Parameters: {"url"=>["tour"], "action"=>"show_page", "controller"=>"site"}
+Completed in 86ms (DB: 3) | 200 [http://uva.ferentschik.de/tour]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:31:54) [GET]
+  Parameters: {"url"=>["news"], "action"=>"show_page", "controller"=>"site"}
+Completed in 219ms (DB: 6) | 200 [http://uva.ferentschik.de/news]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:32:06) [GET]
+  Parameters: {"url"=>["locations"], "action"=>"show_page", "controller"=>"site"}
+Completed in 83ms (DB: 3) | 200 [http://uva.ferentschik.de/locations]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:32:12) [GET]
+  Parameters: {"url"=>["about"], "action"=>"show_page", "controller"=>"site"}
+Completed in 90ms (DB: 3) | 200 [http://uva.ferentschik.de/about]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:32:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"12", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 133ms (View: 68, DB: 7) | 200 OK [http://uva.ferentschik.de/admin/pages/12/edit]
+
+
+Processing Admin::SnippetsController#index (for 201.253.120.202 at 2010-02-05 16:34:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/index
+Completed in 98ms (View: 91, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/snippets]
+
+
+Processing Admin::SnippetsController#edit (for 201.253.120.202 at 2010-02-05 16:34:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/edit
+Completed in 40ms (View: 35, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/snippets/1/edit]
+
+
+Processing Admin::SnippetsController#edit (for 201.253.120.202 at 2010-02-05 16:34:43) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"admin/snippets"}
+Rendering template within layouts/application
+Rendering admin/snippets/edit
+Completed in 36ms (View: 31, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/snippets/3/edit]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:47:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 214ms (View: 190, DB: 7) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:47:21) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 241ms (View: 234, DB: 4) | 200 OK [http://uva.ferentschik.de/admin/pages/9/edit]
+
+
+Processing Admin::PagesController#update (for 201.253.120.202 at 2010-02-05 16:47:36) [PUT]
+  Parameters: {"commit"=>"Save Changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"rqjbCvv2KT5bbmw9NtY3AoXAYeUzRmtYJZiKw5KNtxw=", "id"=>"9", "page"=>{"class_name"=>"", "slug"=>"about", "title"=>"About", "parts_attributes"=>{"0"=>{"name"=>"body", "filter_id"=>"Textile", "_delete"=>"", "id"=>"10", "content"=>"h2. About Uva\r\n\r\nJust testing what one can do"}, "1"=>{"name"=>"sidebar", "filter_id"=>"", "_delete"=>"", "id"=>"11", "content"=>"<div class=\"box\" style=\"margin-top:50px\">\r\n  <h3>Main office</h3>\r\n  222 Address Street<br />\r\n  Portland, OR 97008<br />\r\n  (503) 545-7777\r\n</div>\r\n"}}, "lock_version"=>"10", "breadcrumb"=>"About", "parent_id"=>"1", "status_id"=>"100", "description"=>"", "layout_id"=>"", "keywords"=>""}, "controller"=>"admin/pages"}
+Redirected to http://uva.ferentschik.de/admin/pages
+Completed in 46ms (DB: 6) | 302 Found [http://uva.ferentschik.de/admin/pages/9]
+
+
+Processing Admin::PagesController#index (for 201.253.120.202 at 2010-02-05 16:47:36) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/index
+Completed in 154ms (View: 147, DB: 4) | 200 OK [http://uva.ferentschik.de/admin/pages]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:47:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 127ms (View: 122, DB: 3) | 200 OK [http://uva.ferentschik.de/admin/pages/2/edit]
+
+
+Processing Admin::PagesController#edit (for 201.253.120.202 at 2010-02-05 16:47:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"admin/pages"}
+Rendering template within layouts/application
+Rendering admin/pages/edit
+Completed in 77ms (View: 72, DB: 2) | 200 OK [http://uva.ferentschik.de/admin/pages/10/edit]
+
+
+Processing Admin::LayoutsController#index (for 201.253.120.202 at 2010-02-05 16:48:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/index
+Completed in 80ms (View: 72, DB: 1) | 200 OK [http://uva.ferentschik.de/admin/layouts]
+
+
+Processing Admin::LayoutsController#edit (for 201.253.120.202 at 2010-02-05 16:48:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"admin/layouts"}
+Rendering template within layouts/application
+Rendering admin/layouts/edit
+Completed in 21ms (View: 18, DB: 1) | 200 OK [http://uva.ferentschik.de/admin/layouts/1/edit]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:07) [GET]
+  Parameters: {"url"=>["tour"], "action"=>"show_page", "controller"=>"site"}
+Completed in 68ms (DB: 3) | 200 [http://uva.ferentschik.de/tour]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:08) [GET]
+  Parameters: {"url"=>["reset.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 17ms (DB: 1) | 200 [http://uva.ferentschik.de/reset.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:08) [GET]
+  Parameters: {"url"=>["styles.css"], "action"=>"show_page", "controller"=>"site"}
+Completed in 61ms (DB: 1) | 200 [http://uva.ferentschik.de/styles.css]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:09) [GET]
+  Parameters: {"url"=>"/", "action"=>"show_page", "controller"=>"site"}
+Completed in 125ms (DB: 4) | 200 [http://uva.ferentschik.de/]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:10) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 96ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:12) [GET]
+  Parameters: {"url"=>["news"], "action"=>"show_page", "controller"=>"site"}
+Completed in 183ms (DB: 4) | 200 [http://uva.ferentschik.de/news]
+
+
+Processing SiteController#show_page (for 201.253.120.202 at 2010-02-05 16:52:14) [GET]
+  Parameters: {"url"=>["video", "player.swf"], "action"=>"show_page", "controller"=>"site"}
+Completed in 97ms (DB: 2) | 404 [http://uva.ferentschik.de/video/player.swf]
