@@ -13,9 +13,10 @@
 development:
   adapter: mysql
   database: uva_development
-  username: root
-  password:
+  username: uva
+  password: uva
   host: localhost
+  socket: /tmp/mysql.sock
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
