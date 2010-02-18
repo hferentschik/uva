@@ -1,0 +1,268 @@
+/* CSS Document for U.V.A */
+body {
+    background-color: #BFC1C4;
+    font: normal 0.94em Arial, Helvetica, Verdana, sans-serif;
+    color: #474b4f;
+    line-height: 1.33em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+	margin-top: 45px;
+}
+
+/* LAYOUT */
+#page {
+    width: 942px;
+    text-align: left;
+    border: 1px solid #9EA3AC;
+    margin: 15px auto;
+    padding: 1px;
+    background: #FFFFFF;
+    clear: both;
+}
+
+#header {
+    color: #FFFFFF;
+    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
+    height: 110px;
+    background: url(../images/bg-header.png)
+}
+
+#main {
+    margin: 15px 0px 30px;
+    padding: 0 30px 0 30px;
+}
+
+#startpage #main {
+    margin: 0 0px 30px;
+    padding: 0;
+}
+
+#content {
+    float: left;
+    width: 600px;
+}
+
+#sidebar {
+    float: right;
+    width: 300px;
+    font-size: 90%;
+    padding: 15px;
+    padding-top: 0px;
+}
+
+#footer {
+    padding: 30px 30px 50px 30px;
+    background: #dfe0e1;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/* GENERAL*/
+h1 {
+    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+h2 {
+    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+h3 {
+    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+h3 a {
+    color: #451811;
+    text-decoration: none;
+    border-bottom: none;
+    margin: 0px;
+}
+
+h3 a:hover {
+    color: #902f1c;
+    border-bottom: none;
+}
+
+a {
+    color: #711e11;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #451811;
+    text-decoration: underlined;
+    border-bottom: 2px solid #DBD6D1;
+}
+
+p {
+    margin: 0px 0px 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* NAIGATIONS */
+ul#mainmenu {
+    float: right;
+    display: block;
+    margin: 65px 0 0 0;
+    padding: 0;
+}
+
+ul#mainmenu li {
+    float: left;
+    padding: 0 30px 0 0;
+}
+
+ul#mainmenu li a {
+    float: left;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul#mainmenu li a:hover {
+    tect-decoration: underlined;
+}
+
+ul#mainmenu li.selected a {
+    color: #ffc600;
+}
+
+/* FOOTER */
+.column {
+    float: left;
+    width: 274px;
+    margin: 0 30px 0 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+/* START PAGE*/
+#intro {
+    height: 310px;
+    background: url(../images/intro-about-uva.jpg);
+    padding: 0 0 0 30px;
+}
+
+#intro p {
+    position: relative;
+    top: 140px;
+    font: normal 1.33em Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+    background: #474b4f;
+    width: 410px;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #9c9993;
+}
+
+/* START PAGE*/
+.logo {
+	border:none;
+    margin-top: -45px;
+    margin-left: 20px;
+}
+
+/* TEXT PAGE */
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry .info {
+    margin-top: 1em;
+    font-size: 1em;
+}
+
+.entry p {
+    font-size: 1.1em;
+}
+
+.posted {
+    color: #918C7E;
+    font-family: "lucida grande", arial, helvetica, verdana, sans-serif;
+    font-size: 10px;
+    margin: -3px 0 5px;
+    padding: 0px;
+}
+
+.posted em {
+    color: #451811;
+    font-style: italic;
+    margin: 0px 6px;
+    font-weight: bold;
+}
+
+.posted img {
+    background: transparent none repeat scroll 0 0;
+    border: medium none;
+    margin: 0 4px -5px 2px;
+    text-decoration: none;
+}
+
+/*---STYLES---*/
+.box {
+    padding: 15px;
+    border: 1px solid #dbd6d1;
+    background-color: #efedeb;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.box input {
+    margin-top: 5px;
+}
+
+.box input.email {
+    font-size: 10px;
+    padding: 3px;
+    color: #a29e96;
+    width: 140px;
+}
+
+.box input.subscribe {
+    width: 70px;
+    margin-left: 5px;
+    color: #232323;
+}
+
+.box ul {
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+
