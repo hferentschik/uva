@@ -1,4 +1,6 @@
 class DogsController < ApplicationController
+  radiant_layout 'Normal'
+  
   # GET /dogs
   # GET /dogs.xml
   def index

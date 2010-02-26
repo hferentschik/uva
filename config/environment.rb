@@ -79,4 +79,6 @@ Radiant::Initializer.run do |config|
       inflect.uncountable 'config'
     end
   end
+  
+  config.extensions = [:share_layouts, :all]
 end
