@@ -4,7 +4,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.1.40)
 # Database: uva_development
-# Generation Time: 2010-02-26 23:44:11 -0300
+# Generation Time: 2010-02-27 00:24:59 -0300
 # ************************************************************
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -17,6 +17,35 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
+# Dump of table assets
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `assets`;
+
+CREATE TABLE `assets` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `caption` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `asset_file_name` varchar(255) DEFAULT NULL,
+  `asset_content_type` varchar(255) DEFAULT NULL,
+  `asset_file_size` int(11) DEFAULT NULL,
+  `created_by_id` int(11) DEFAULT NULL,
+  `updated_by_id` int(11) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+LOCK TABLES `assets` WRITE;
+/*!40000 ALTER TABLE `assets` DISABLE KEYS */;
+INSERT INTO `assets` (`id`,`caption`,`title`,`asset_file_name`,`asset_content_type`,`asset_file_size`,`created_by_id`,`updated_by_id`,`created_at`,`updated_at`)
+VALUES
+	(1,'Rotweiler Gino','Rotweiler','rotweiler_1.jpg','image/jpeg',42456,1,1,'2010-02-27 02:58:54','2010-02-27 03:17:28');
+
+/*!40000 ALTER TABLE `assets` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
 # Dump of table config
 # ------------------------------------------------------------
 
@@ -26,20 +55,27 @@ CREATE TABLE `config` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `key` varchar(40) NOT NULL DEFAULT '',
   `value` varchar(255) DEFAULT '',
+  `description` text,
   PRIMARY KEY (`id`),
   UNIQUE KEY `key` (`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `config` WRITE;
 /*!40000 ALTER TABLE `config` DISABLE KEYS */;
-INSERT INTO `config` (`id`,`key`,`value`)
+INSERT INTO `config` (`id`,`key`,`value`,`description`)
 VALUES
-	(1,'admin.title','Radiant CMS'),
-	(2,'admin.subtitle','Publishing for Small Teams'),
-	(3,'defaults.page.parts','body, extended'),
-	(4,'defaults.page.status','draft'),
-	(5,'defaults.page.filter',''),
-	(6,'session_timeout','1209600');
+	(1,'admin.title','Radiant CMS','Title text displayed at the top of all administration screens.'),
+	(2,'admin.subtitle','Publishing for Small Teams','The tagline displayed underneath the main administration title'),
+	(3,'defaults.page.parts','body, extended','Defines the page parts that a new page is created with.  It should be a list, separated by a comma and a space.  For example:\n\nbq. @body, extended, sidebar@\n'),
+	(4,'defaults.page.status','draft','Defines the publishing status of new pages.  This can any one of:\n\n* draft\n* published\n* reviewed\n* hidden\n'),
+	(5,'defaults.page.filter','','Sets the text filter a new page has by default.  Valid options, in a vanilla Radiant install are:\n\n* _leave blank to set no default filter_\n* Markdown\n* SmartyPants\n* Textile\n'),
+	(6,'session_timeout','1209600',NULL),
+	(7,'roles.settings','admin','List of user roles that may see the settings tabs.'),
+	(8,'assets.additional_thumbnails','normal=640x640>','Defines the default sizes for image assets that are created when an image is uploaded. Use \"#\" to crop the image to a specific size. \"42x42#\" would be a square thumbnail, cropped in the center 42 pixels by 42 pixels.'),
+	(9,'assets.display_size','original','Sets which of your image sizes is shown is the edit view. Defaults to the \"original\" image size, but any size may be used. '),
+	(10,'assets.content_types','image/jpeg, image/pjpeg, image/gif, image/png, image/x-png, image/jpg, video/x-m4v, video/quicktime, application/x-shockwave-flash, audio/mpeg, video/mpeg','Defines the content types of that will be allowed to be uploaded as assets.'),
+	(11,'assets.max_asset_size','5','The size in megabytes that will be the max size allowed to be uploaded for an asset'),
+	(12,'assets.skip_filetype_validation','true',NULL);
 
 /*!40000 ALTER TABLE `config` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -109,6 +145,21 @@ VALUES
 UNLOCK TABLES;
 
 
+# Dump of table page_attachments
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `page_attachments`;
+
+CREATE TABLE `page_attachments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `asset_id` int(11) DEFAULT NULL,
+  `page_id` int(11) DEFAULT NULL,
+  `position` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
 # Dump of table page_parts
 # ------------------------------------------------------------
 
@@ -122,7 +173,7 @@ CREATE TABLE `page_parts` (
   `page_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `parts_by_page` (`page_id`,`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `page_parts` WRITE;
 /*!40000 ALTER TABLE `page_parts` DISABLE KEYS */;
@@ -157,7 +208,9 @@ VALUES
 	(37,'body','','<h1>History</h1>\r\n<hr/>\r\n<div id=\"main-text\">\r\n    <p>\r\n   Unidos por la Vida Animal, se forma con un Â grupo de habitantes y contribuyentes de la Localidad de Tigre en el aÃ±o 1999 ,Â que se une ante las matanzasÂ ocurridas dentro deÂ el\r\n   Centro de ZoonosisÂ .\r\n   Este grupo se reune con el Intendente y le hacen una propuesta diferente, la de empezar a castrar, vacunar Â y desparasitar para poder dar en adopciÃ³n dichos animales.\r\n   Este grupo formado por mujeres y hombres de esta Ciudad se distribuyeron las tareas, de lunes a domingos ,o sea Â los 365 dÃ­as del aÃ±o.ConsistiÃ³,en alimentarlos, mantener \r\n   la higiene del lugar y sacarlos a pasear .\r\n   El Profesional Veterinario, comenzo a castrar 30 animales por dÃ­a, contando con la ayuda de U.V.A que colaboraba Â llevando los animales preparÃ¡ndoles para dicha operaciÃ³n y su   \r\n   posterior recuperaciÃ³n para luego dar en adopciÃ³n.\r\n   U.V.A modifico el lugar ya que se inundaba y por ello los animales morÃ­an ahogandose en sus jaulas.\r\n   Los perros ya no estaban en jaulas de 2 x 2, si no que se construyeron caniles con patios donde podÃ­an moverse ,caminar y correr, En invierno se colocaron estufas con \r\n   interruptores y todo esto fue realizado por la AsociaciÃ³n..\r\n   Cuando las autoridades por el aÃ±o 2006 deciden hacer un nuevo Zoonosis, U.V.A presenta por iniciativa de una Voluntaria, un plano de instalaciones traÃ­do de E.E.U.U Â y dicho\r\n   plano es aceptado y Â adaptado al lugar.\r\n   La construcciÃ³n se termina en el aÃ±o 2007 y se realiza la mudanza con los animales, U.V.A habÃ­a cumplido otra etapa.........se habÃ­an cambiado las instalaciones y se podÃ­an \r\n   ahora realizar mas tareas aun, en beneficio de los animales !!!!!!\r\n   HabÃ­a que empezar con campaÃ±as de esterilizaciÃ³n masivas y sostenidas ,para ello se necesitan mas Â Veterinarios.\r\n   La AsociaciÃ³n habla con las Autoridades Municipales sobre la necesidad de aumentar las esterilizaciones, mayor cantidad de consultas y vacunaciÃ³n\r\n   para prevencion de enfermedades.\r\n   Como la demanda es cada ves mayor , hoy el Centro de Zoonosis cuenta con 5 Profesionales Municipales y un Profesional contratado por la Cooperadora.\r\nÂ   </p>\r\n   <p>\r\n   Como ayuda U.V.A a los Veterinarios y al Municipio y a la PoblaciÃ³n de Tigre?\r\nÂ   </p>\r\n   <p>\r\n   Tigre es un Municipio de 330.000 habitantes que tienen un perro cada 3 habitantes,para poder mermar dicha cantidad , los Voluntarios organizan en los diferentes Barrios \r\n   campaÃ±as de esterilizaciÃ³n que Â realiza gratuitamente el Municipio con sus Profesionales.\r\n   U.V.A dona hoy dia vacunas quintuples y medicacion que se aplica dentro del Centro de Zoonosis \r\n   La AsociaciÃ³n ,junto con Municipio trabajan dÃ­a a dÃ­a para poder mejorar el Bienestar que conlleva al Bienestar Humano.\r\n   </p>\r\n</div>',20),
 	(38,'extended','','',20),
 	(39,'body','','<h1>How to help</h1>\r\n<hr/>\r\n<div id=\"main-text\">\r\n    <p>\r\n    </p>\r\n</div>',21),
-	(40,'extended','','',21);
+	(40,'extended','','',21),
+	(41,'body','Markdown','<h3><r:title /></h3>\r\n<r:snippet name=\"posted\" />\r\n\r\n<r:assets:image title=\"Rotweiler\" />\r\n\r\nUn lunes por la maÃ±ana, caminando muy lentamente y con la cabeza muy baja, conocÃ­ a Gino, un perro rottwailer de aproximadamente 2 aÃ±os de edad VolvÃ­ al lugar para descubrir Â porque se movilizaba asÃ­ y descubrÃ­ que su cara estaba totalmente desfigurada del lado izquierdo y llena de orificios y gusanos. No podÃ­a creer lo que veÃ­a, comencÃ© a llamarlo tratando de que me siguiera hasta mi casa (que quedaba cerca ),Â pero el prefiriÃ³ entrar a un negocio de Â venta de lanchas y se acostÃ³ detrÃ¡s de un bote,. Le pedÃ­ por favor a la dueÃ±a del Comercio que le permitiera quedarse allÃ­ unos minutos y llame urgente al Jefe de Zoonosis de Tigre para que me enviara el mÃ³vil, no habÃ­an pasado 20 minutos que llego el mÃ³vil, y el, muy sumiso se dejo subir al mismo y lo transladamos a Zoonosis. Inmediatamente fue atendido por los Profesionales Veterinarios, y a partir de allÃ­ empezÃ³ la gran recuperaciÃ³n de Gino. Hoy dÃ­a se encuentra en los caniles a cargo de U.V.A. y tenemos muchas esperanzas de que lo podremos dar en adopciÃ³n a una buena familia que lo ame como se merece, El tiene buen carÃ¡cter, ya esta castrado y vacunado, y pronto podrÃ¡ ser un perro feliz en un nuevo hogar.',22),
+	(42,'extended','','',22);
 
 /*!40000 ALTER TABLE `page_parts` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -191,7 +244,7 @@ CREATE TABLE `pages` (
   KEY `pages_parent_id` (`parent_id`),
   KEY `pages_child_slug` (`slug`,`parent_id`),
   KEY `pages_published` (`virtual`,`status_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
@@ -212,7 +265,8 @@ VALUES
 	(18,'uva-style','uva-style.css','uva-style','',100,1,2,'2010-02-21 22:42:39','2010-02-21 22:55:54','2010-02-21 19:48:36',1,1,0,5,'',''),
 	(19,'Team','team','Team','',100,9,NULL,'2010-02-26 00:16:50','2010-02-26 00:21:18','2010-02-25 21:21:18',1,1,0,2,'',''),
 	(20,'History','history','History','',100,9,NULL,'2010-02-26 00:17:41','2010-02-26 00:21:10','2010-02-25 21:21:10',1,1,0,2,'',''),
-	(21,'Help','help','Help','',100,9,NULL,'2010-02-26 00:18:11','2010-02-26 00:21:01','2010-02-25 21:21:01',1,1,0,2,'','');
+	(21,'Help','help','Help','',100,9,NULL,'2010-02-26 00:18:11','2010-02-26 00:21:01','2010-02-25 21:21:01',1,1,0,2,'',''),
+	(22,'La historia de Gino','la-historia-de-gino','La historia de Gino','',100,4,NULL,'2010-02-27 03:01:32','2010-02-27 03:01:58','2010-02-27 00:01:58',1,1,0,1,'','');
 
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -254,7 +308,17 @@ VALUES
 	('7'),
 	('8'),
 	('9'),
-	('Dog-20100222200719');
+	('Dog-20100222200719'),
+	('Paperclipped-1'),
+	('Paperclipped-2'),
+	('Paperclipped-20090316132151'),
+	('Paperclipped-3'),
+	('Paperclipped-4'),
+	('Paperclipped-5'),
+	('Paperclipped-6'),
+	('Paperclipped-7'),
+	('Settings-1'),
+	('Settings-2');
 
 /*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -309,7 +373,7 @@ VALUES
 	(7,'sitemap','',' <r:children:each by=\"title\" order=\"asc\">\r\n   <r:unless_content part=\"no-map\">\r\n     <li>\r\n       <r:link />\r\n       <r:if_children>\r\n         <ul class=\"second\">\r\n           <r:snippet name=\"sitemap\" />\r\n         </ul>\r\n       </r:if_children>\r\n     </li>\r\n   </r:unless_content>\r\n </r:children:each>\r\n\r\n','2009-01-01 23:51:52','2009-01-02 00:45:01',1,NULL,14),
 	(8,'comments','','<img src=\"http://spurrd.com/assets/126/comments.jpg\" />\n\n<div id=\"disqus_thread\"></div><r:comment><script type=\"text/javascript\" src=\"http://disqus.com/forums/radiant/embed.js\"></script><noscript><a href=\"http://radiant.disqus.com/?url=ref\">View the discussion thread.</a></noscript></r:comment><a href=\"http://disqus.com\" class=\"dsq-brlink\">blog comments powered by <span class=\"logo-disqus\">Disqus</span></a>','2009-01-02 02:17:21','2009-01-02 07:20:55',1,NULL,3),
 	(9,'comments_summary','','ï»¿ï»¿ï»¿ï»¿<script type=\"text/javascript\">\r\n//<![CDATA[\r\n(function() {\r\n		var links = document.getElementsByTagName(\'a\');\r\n		var query = \'?\';\r\n		for(var i = 0; i < links.length; i++) {\r\n			if(links[i].href.indexOf(\'#disqus_thread\') >= 0) {\r\n				query += \'url\' + i + \'=\' + encodeURIComponent(links[i].href) + \'&\';\r\n			}\r\n		}\r\n		document.write(\'<script type=\"text/javascript\" src=\"http://disqus.com/forums/radiant/get_num_replies.js\' + query + \'\"></\' + \'script>\');\r\n	})();\r\n//]]>\r\n</script>\r\n\r\n','2009-01-02 02:18:23','2009-01-02 02:59:44',1,NULL,4),
-	(10,'posted','','<div class=\"posted\">Posted by <r:author /> on <r:date format=\"%B %d, %Y\" /><em>|</em><img src=\"http://spurrd.com/assets/123/comment.png\" /><a href=\"<r:url />#disqus_thread\">Comments</a></div>','2009-01-02 07:32:00','2009-01-02 07:32:00',1,NULL,0);
+	(10,'posted','','<div class=\"posted\">Posted by <r:author /> on <r:date format=\"%B %d, %Y\" /></div>','2009-01-02 07:32:00','2010-02-27 03:06:16',1,1,1);
 
 /*!40000 ALTER TABLE `snippets` ENABLE KEYS */;
 UNLOCK TABLES;
