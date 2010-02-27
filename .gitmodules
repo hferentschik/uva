@@ -1,0 +1,3 @@
+[submodule "vendor/extensions/share_layouts"]
+	path = vendor/extensions/share_layouts
+	url = git://github.com/radiant/radiant-share-layouts-extension.git
