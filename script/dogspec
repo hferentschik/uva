@@ -1,0 +1,1 @@
+script/spec -r config/environment.rb vendor/extensions/dog/spec/**/*.rb

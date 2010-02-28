@@ -9,14 +9,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081203140407) do
+ActiveRecord::Schema.define(:version => 20100222200719) do
+
+  create_table "assets", :force => true do |t|
+    t.string   "caption"
+    t.string   "title"
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.integer  "created_by_id"
+    t.integer  "updated_by_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "config", :force => true do |t|
-    t.string "key",   :limit => 40, :default => "", :null => false
-    t.string "value",               :default => ""
+    t.string "key",         :limit => 40, :default => "", :null => false
+    t.string "value",                     :default => ""
+    t.text   "description"
   end
 
   add_index "config", ["key"], :name => "key", :unique => true
+
+  create_table "dogs", :force => true do |t|
+    t.string   "name",        :null => false
+    t.string   "gender",      :null => false
+    t.date     "birthdate",   :null => false
+    t.string   "description", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "extension_meta", :force => true do |t|
     t.string  "name"
@@ -33,6 +55,12 @@ ActiveRecord::Schema.define(:version => 20081203140407) do
     t.integer  "updated_by_id"
     t.string   "content_type",  :limit => 40
     t.integer  "lock_version",                 :default => 0
+  end
+
+  create_table "page_attachments", :force => true do |t|
+    t.integer "asset_id"
+    t.integer "page_id"
+    t.integer "position"
   end
 
   create_table "page_parts", :force => true do |t|

@@ -1,3 +1,8 @@
 require File.join(File.dirname(__FILE__), 'config', 'boot')
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
 
-import File.join(RADIANT_ROOT, 'Rakefile')
+require 'tasks/rails'
+
+#import File.join(RADIANT_ROOT, 'Rakefile')
