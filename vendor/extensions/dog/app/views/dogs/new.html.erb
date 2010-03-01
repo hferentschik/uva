@@ -1,27 +1,35 @@
-<h1>New dog</h1>
+<div id="main" class="clearfix">
+<div id="content">
+  <h1>New dog</h1>
 
-<% form_for(@dog) do |f| %>
-  <%= f.error_messages %>
+  <% form_for(@dog) do |f| %>
+    <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
-  </p>
-  <p>
-    <%= f.label :birthdate %><br />
-    <%= f.date_select :birthdate %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :gender %><br />
+      <%= f.select :gender, [['Female', 'F'], ['Male', 'M']] %>
+    </p>
+    <p>
+      <%= f.label :birthdate %><br />
+      <%= f.date_select :birthdate %>
+    </p>
+    <p>
+      <%= f.label :asset, 'Picture:' %><br />
+      <%= collection_select :dog, :asset_id, Asset.all, :id, :asset_file_name %>
+    </p>
+    <p>
+      <%= f.label :description %><br />
+      <%= f.text_area :description %>
+    </p>
+    <p>
+      <%= f.submit 'Create' %>
+    </p>
+  <% end %>
 
-<%= link_to 'Back', dogs_path %>
+  <%= link_to 'Back', dogs_path %>
+</div>
+</div>

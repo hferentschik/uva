@@ -9,7 +9,7 @@
   </p>
   <p>
     <%= f.label :gender %><br />
-    <%= f.text_field :gender %>
+    <%= f.select :gender, [['Female', 'F'], ['Male', 'M']] %>
   </p>
   <p>
     <%= f.label :birthdate %><br />
@@ -17,7 +17,7 @@
   </p>
   <p>
     <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </p>
   <p>
     <%= f.submit 'Update' %>
