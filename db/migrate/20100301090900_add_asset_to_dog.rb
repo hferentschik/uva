@@ -6,6 +6,6 @@ class AddAssetToDog < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :asset_id
+    remove_column :dogs, :asset_id
   end
 end

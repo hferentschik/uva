@@ -1,19 +1,16 @@
-<h1>Listing dogs</h1>
+<div id="main" class="clearfix">
+<div id="content">
 
 <table>
-  <tr>
-    <th>Name</th>
-    <th>Gender</th>
-    <th>Birthdate</th>
-    <th>Description</th>
-  </tr>
 
 <% @dogs.each do |dog| %>
   <tr>
-    <td><%=h dog.name %></td>
-    <td><%=h dog.gender %></td>
-    <td><%=h dog.birthdate %></td>
-    <td><%=h dog.description %></td>
+    <td><%= image_tag dog.picture_file_name, :width => '100' %></td>
+    <td>
+      <%=h dog.name %><br/>
+      AGE <%=h dog.age%> | GENDER <%=h dog.long_gender %> | SIZE <%= dog.long_size %><br/>
+      <%=h dog.description %>
+    </td>
     <td><%= link_to 'Show', dog %></td>
     <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
     <td><%= link_to 'Destroy', dog, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -24,3 +21,6 @@
 <br />
 
 <%= link_to 'New dog', new_dog_path %>
+
+</div>
+</div>

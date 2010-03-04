@@ -16,6 +16,18 @@
     <%= f.date_select :birthdate %>
   </p>
   <p>
+    <%= f.label :asset, 'Picture:' %><br />
+    <%= collection_select :dog, :asset_id, Asset.all, :id, :asset_file_name %>
+  </p>
+  <p>
+    <%= f.label :size %><br />
+    <%= f.select :size, [['Small', 'S'], ['Medium', 'M'], ['Large', 'L']] %>
+  </p>
+  <p>
+    <%= f.label :adopted %>
+    <%= f.check_box :adopted %>
+  </p>
+  <p>
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>
