@@ -43,6 +43,15 @@ ActiveRecord::Schema.define(:version => 20100304190300) do
     t.boolean  "adopted",     :default => false
   end
 
+  create_table "dogs-foo", :force => true do |t|
+    t.string   "name"
+    t.string   "gender"
+    t.date     "birthdate"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "extension_meta", :force => true do |t|
     t.string  "name"
     t.integer "schema_version", :default => 0

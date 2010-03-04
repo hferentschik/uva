@@ -1,0 +1,1 @@
+Some temporary resources needed while building the site. Can be removed later.
