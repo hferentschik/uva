@@ -22,6 +22,7 @@ body {
 }
 
 #header {
+    position: relative;
     color: #FFFFFF;
     font: normal 1.20em Georgia, "Times New Roman", Times, serif;
     height: 110px;
@@ -30,7 +31,7 @@ body {
 
 #main {
     margin: 15px 0px 30px;
-    padding: 0 30px 0 30px;
+    padding: 50px 30px 0 30px;
 }
 
 #startpage #main {
@@ -40,20 +41,23 @@ body {
 
 #content {
     float: left;
-    width: 600px;
-    padding: 50px 0px 0px 0px
+    width: 577px;
+    padding: 0 0 30px 0;
 }
 
 #sidebar {
     float: right;
-    width: 250px;
-    font-size: 90%;
-    padding: 72px 15px 0px 15px;
+    width: 245px;
+    padding: 23px 15px 30px 15px;
+    margin-top: 41px;
+    border-top: 1px solid #dfe0e1;
+    background: url(../images/bg-rightcol.gif) repeat-x left top;
 }
 
 #footer {
-    padding: 30px 30px 50px 30px;
+    padding: 30px 30px 30px 30px;
     background: #dfe0e1;
+    width: 882px;
 }
 
 .clearfix:after {
@@ -67,45 +71,47 @@ body {
 
 /* GENERAL*/
 h1 {
-    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
-    margin: 0;
+    font: normal 1.8em Georgia, "Times New Roman", Times, serif;
+    margin: 0 0 20px 0;
+}
+
+#content h1 {
+    border-bottom: 1px solid #dfe0e1;
+    padding: 0 0 10px 0;
 }
 
 h2 {
-    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
-    margin: 0;
+    font: normal 1.33em Georgia, "Times New Roman", Times, serif;
+    margin: 0 0 10px 0;
 }
 
 h3 {
-    font: normal 1.20em Georgia, "Times New Roman", Times, serif;
-    margin: 0;
+    font: normal 1.07em Georgia, "Times New Roman", Times, serif;
+    margin: 0 0 10px 0;
 }
 
 h3 a {
-    color: #451811;
-    text-decoration: none;
-    border-bottom: none;
+    color: #474b4f;
     margin: 0px;
 }
 
 h3 a:hover {
-    color: #902f1c;
-    border-bottom: none;
+    color: #474b4f;
+    text-decoration: underline;
 }
 
 a {
-    color: #711e11;
+    color: #0c6cc6;
     text-decoration: none;
 }
 
 a:hover {
-    color: #451811;
-    text-decoration: underlined;
-    border-bottom: 2px solid #DBD6D1;
+    color: #0c6cc6;
+    text-decoration: underline;
 }
 
 p {
-    margin: 0px 0px 10px;
+    margin: 0px 0px 15px 0;
 }
 
 ul {
@@ -118,6 +124,18 @@ li {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+#content img {
+    margin-bottom: 15px;
+}
+
+#content img.leftaligned {
+    margin: 0 10px 15px 0;
+}
+
+#content img.rightaligned {
+    margin: 0 0 15px 10px;
 }
 
 /* NAVIGATIONS */
@@ -142,31 +160,83 @@ ul#mainmenu li a {
 }
 
 ul#mainmenu li a:hover {
-    tect-decoration: underlined;
+    text-decoration: underline;
 }
 
 ul#mainmenu li.selected a {
     color: #ffc600;
 }
 
+/* SUB MENU */
+ul#submenu {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul#submenu li {
+    padding: 0 30px 0 13px;
+    margin-bottom: 10px;
+    background: url(../images/arrow.gif) no-repeat 0 5px;
+}
+
+ul#submenu li a {
+    display: block;
+    text-decoration: none;
+}
+
+ul#submenu li a:hover {
+    text-decoration: underline;
+}
+
+ul#submenu li.selected a {
+    color: #333333;
+}
+
+/* Side bar*/
+#sidebar h1 {
+    padding: 0;
+    font-size: 1.33em;
+}
+
 /* HEADER */
 .logo {
-    border: none;
-    margin-top: -45px;
-    margin-left: 20px;
+    position: absolute;
+    top: -35px;
+    left: 25px;
+    background: url(../images/logo.gif) no-repeat left top;
+    display: block;
+    width: 202px;
+    height: 168px;
+}
+
+.logo span {
+    display: none;
 }
 
 /* FOOTER */
-.column-blog {
-    float: left;
-    width: 290px;
-    margin: 0 30px 0 0;
+.column ul li {
+    font-weight: bolf;
+}
+
+.column ul li {
+    font-weight: bolf;
+}
+
+.column ul li span {
+    color: #474b4f;
+    font-weight: normal;
 }
 
 .column {
     float: left;
-    width: 274px;
+    width: 273px;
     margin: 0 30px 0 0;
+}
+
+.column li, .column p {
+    font-size: 0.80em;
+    line-height: 1.33em;
 }
 
 .no-margin {
@@ -178,6 +248,7 @@ ul#mainmenu li.selected a {
     height: 310px;
     background: url(../images/intro-about-uva.jpg);
     padding: 0 0 0 30px;
+    margin-bottom: 20px;
 }
 
 #intro p {
@@ -192,29 +263,24 @@ ul#mainmenu li.selected a {
 }
 
 #doglist-wrapper {
+    padding: 0 0 0 30px;
 }
 
-#dog-list-header {
-    padding: 20px 0px 30px 30px;
-}
-
-#dog-list {
-    margin: 0;
-    padding: 0px 0px 0px 30px;
-    list-style: none;
-    width: 100%;
-}
-
-#dog-list td {
+#doglist-wrapper li {
+    float: left;
+    margin: 0 26px 0 0;
     vertical-align: bottom;
 }
 
-#dog-list td a {
-    text-decoration: none;
-    border-bottom: 0px;
+#doglist-wrapper li a {
+    font-size: 0.88em;
 }
 
-#dog-list td img {
+#doglist-wrapper p {
+    margin: 0px 0px 25px 0;
+}
+
+#doglist-wrapper img {
     border: none;
 }
 
