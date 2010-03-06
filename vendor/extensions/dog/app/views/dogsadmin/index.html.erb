@@ -1,0 +1,26 @@
+<div id="main" class="clearfix">
+<div id="content">
+
+<table>
+
+<% @dogs.each do |dog| %>
+  <tr>
+    <td><%= image_tag dog.picture_file_name, :width => '100' %></td>
+    <td>
+      <%=h dog.name %><br/>
+      AGE <%=h dog.age%> | GENDER <%=h dog.long_gender %> | SIZE <%= dog.long_size %><br/>
+      <%=h dog.description %>
+    </td>
+    <td><%= link_to 'Show', '/dogsadmin/' + dog.id.to_s %></td>
+    <td><%= link_to 'Edit', '/dogsadmin/' + dog.id.to_s + '/edit' %></td>
+    <td><%= link_to 'Destroy', '/dogsadmin/' + dog.id.to_s, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New dog', '/dogsadmin/new' %>
+
+</div>
+</div>
