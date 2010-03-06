@@ -11,9 +11,6 @@
       AGE <%=h dog.age%> | GENDER <%=h dog.long_gender %> | SIZE <%= dog.long_size %><br/>
       <%=h dog.description %>
     </td>
-    <td><%= link_to 'Show', dog %></td>
-    <td><%= link_to 'Edit', edit_dog_path(dog) %></td>
-    <td><%= link_to 'Destroy', dog, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

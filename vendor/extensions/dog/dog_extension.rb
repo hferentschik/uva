@@ -12,11 +12,19 @@ class DogExtension < Radiant::Extension
   #   end
   # end
   define_routes do |map|
-      map.resources :dogs
+      map.resources :dogs 
+      map.resources :dogsadmin 
+      # do |dogs|
+      #   dogs.resources :dogsadmin
+      # end
+      # map.namespace 'dogsadmin' do |admin|
+      #   admin.resources :dogsadmin
+      # end
+      
   end
     
   def activate
-    admin.tabs.add "Dog", "/dogs", :after => "Layouts", :visibility => [:all]
+    admin.tabs.add "Dog", "/dogsadmin", :after => "Layouts", :visibility => [:all]
   end
   
   def deactivate
