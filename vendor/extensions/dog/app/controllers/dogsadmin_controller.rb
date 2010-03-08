@@ -42,7 +42,9 @@ class DogsadminController < ApplicationController
   # POST /dogs
   # POST /dogs.xml
   def create
-    @dog = Dog.new(params[:dog])
+    age = rip_out_age params[:dog]
+    @dog = Dog.new params[:dog]
+    @dog.birthdate = DateTime.new( DateTime.now.year - age )
 
     respond_to do |format|
       if @dog.save
@@ -55,11 +57,19 @@ class DogsadminController < ApplicationController
       end
     end
   end
+  
+  def rip_out_age dog_params
+    age = dog_params[:age].to_i
+    dog_params.delete :age # need to remove age since it is not part of 'Dog'
+    age
+  end
 
   # PUT /dogs/1
   # PUT /dogs/1.xml
   def update
     @dog = Dog.find(params[:id])
+    age = rip_out_age params[:dog]
+    @dog.birthdate = DateTime.new( DateTime.now.year - age )
 
     respond_to do |format|
       if @dog.update_attributes(params[:dog])

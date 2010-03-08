@@ -12,8 +12,8 @@
     <%= f.select :gender, [['Female', 'F'], ['Male', 'M']] %>
   </p>
   <p>
-    <%= f.label :birthdate %><br />
-    <%= f.date_select :birthdate %>
+    <%= f.label :age %><br />
+    <%= f.select :age, Dog.possible_ages %>
   </p>
   <p>
     <%= f.label :asset, 'Picture:' %><br />

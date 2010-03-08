@@ -5,7 +5,11 @@ class Dog < ActiveRecord::Base
   end
   
   def age 
-   DateTime.now.year - birthdate.year
+    if birthdate.nil?
+      'Unknown'
+    else
+      DateTime.now.year - birthdate.year
+    end
   end
   
   def long_gender
@@ -28,5 +32,9 @@ class Dog < ActiveRecord::Base
   
   def Dog.not_adopted
     find :all, :conditions => {:adopted => false}
+  end
+  
+  def Dog.possible_ages
+    (0..8).collect { |i| [i,i]  } + [['>8', 9]]
   end
 end

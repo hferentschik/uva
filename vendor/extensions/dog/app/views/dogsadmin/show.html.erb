@@ -11,8 +11,12 @@
 </p>
 
 <p>
-  <b>Birthdate:</b>
-  <%=h @dog.birthdate %>
+  <b>Age:</b>
+  <%=h @dog.age %>
+</p>
+
+<p>
+  <% if @dog.adopted %>Is adopted<% end %>
 </p>
 
 <p>
