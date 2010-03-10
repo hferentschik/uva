@@ -3,7 +3,6 @@
   <h1>New dog</h1>
 
   <% form_for( @dog, :url => {:action => "create"} ) do |f| %>
-    <%= f.error_messages %>
 
     <p>
       <%= f.label :name %><br />

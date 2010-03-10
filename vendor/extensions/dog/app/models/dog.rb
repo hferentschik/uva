@@ -1,4 +1,7 @@
 class Dog < ActiveRecord::Base  
+  validates_length_of :name, :minimum => 1, :message => 'should be at least one character long'
+  validates_length_of :description, :minimum => 5, :message => 'should be at least five characters'
+  
   def picture_file_name
     pic = Asset.find :first, :conditions => { :id => self.asset_id }
     '../assets/' + self.asset_id.to_s + '/' + pic.asset_file_name
