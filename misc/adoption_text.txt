@@ -1,0 +1,52 @@
+2	Capitana	f	2008-09-01	Carácter muy bueno, es muy sociable y mimosa. 
+Esta perrita estaba viviendo en el Hospital de Pacheco, la alimentaban las enfermeras y la buena gente que concurre al hospital, hasta que se embarazo, entonces la trasladamos hasta Zoonosis con sus bebes, allí todos tuvieron atención Veterinaria y comida hasta que dimos en adopción los cachorros a  ella se la castro , desparasito y  vacuno hoy día espera conseguir un buen hogar donde le de mucho amor.	8	m#
+3	Silvino	m	2009-03-01	Carácter sociable. 
+Una voluntaria lo encontró abandonado en el Puerto de Frutos de Tigre lo llevo a Zoonosis donde se lo controlo sanitariamente se desparasito y vacuno, castro y se le dio amor y alimento. Hoy ya quiere irse a una casa que siempre deseo tener.mediano	9	m#
+4	Pimpollo	m	2008-03-01	Carácter bueno, el convive con otro compañerito dentro del canil (un perro ciego). Fue abandonado por su dueño en Zoonosis, presentaba sarna y otras lesiones que se le curaron dentro del Centro, se vacuno y desparasito y castro y como verán hoy tiene un hermoso pelo!	10	m#
+5	Nube	f	2009-03-01	Carácter muy bueno.
+Fue abandonado y encontrado por una voluntaria en el Puerto de Frutos y luego llevado al Centro de Zoonosis donde espera ansiosamente ser adoptado y compartir su vida con gente que lo ame mucho.	11	m#
+6	Nano	m	2002-09-01	Estaba en un colegio compartiendo un acto con los chicos, hasta que la Directora de la Escuela lo hizo retirar y llevar a Zoonosis, el tenia collar y por supuesto un dueño, pero nadie reclamo ni lo fue a buscar lo abandonaron a su edad sin importarle que el espera todos los días volver a su casa de la nunca lo tendrían que haber abandonado.	12	m# 
+7	Florcita	f	2008-09-01	Caracter muy sociable y muy buena.
+Fue abandonada en Zoonosis, recogida por una voluntaria con gran desnutricion y sarna, miren que bella esta ahora!	13	m#
+8	Pelusa	f	2007-09-01	Caracter muy sociable y buena. 
+Abandonada en la calle, desnutrida y con sarna, rescatada por la Protectora, curada desparasitada y castrada busca hogar donde la mimen mucho.	15	m#
+9	Lupita	f	2007-03-01	Caracter muy bueno.
+Ella fue abandonada con la excusa de que era mordedora, aunque luego se comprobo en los caniles que no era asi porque es sunmamente tranquila y da muchos besos sin jamas demostrar agresion con los voluntarios ni con otros perros.	16	m#
+10	Jovita	f	2007-09-01	Caracter bueno y muy inquieta, necesita espacio para correr y jugar.
+Fue rescatada por una Voluntaria, habia sido abandonada, atada en la puerta de Zoonosis, con desnutricion y sarna. Fue curada, vacunada y castrada. Necesita hogar y muchos mimos y juegos.	17	m#
+11	Julian	m	2009-03-01	Caracter muy bueno y sociable.
+Fue abandona en la calle atado con una cadena a un poste de luz con sarna muy muy flaco y muy triste.
+Hoy es un hermoso perro de pelaje negro y muy brillante! Quiere como todos los demas vivir libre en una casa donde le den cariño.	18	m#
+12	Negra	f	2007-03-01	Castrada, vacunada y desparasitada.
+Muy buen caracter y sociable.
+Fue abandonada en Zoonosis, atada a un arbol de la vereda, desnutrida y con sarna, hoy se encuentra totalmente recuperada y esta esperando un hogar y muchos mimos!	19	m#
+13	Juanita	f	2008-03-01	Caracter muy docil y es muy amigable con otros perros.
+Rescatada de la via publica por una Voluntaria de U.V.A se encontraba con gusanos y muy triste.
+Hoy esta muy bien, curada, castrada, vacunada, desparasitada y necesita un hogar y mucho amor.	20	m#
+14	Morena	f	2006-03-01	Rescatada de la via publica en malas condiciones sanitarias y muy debil. 
+Hoy esta castrada, vacunada, desparasitada y esperando un hogar que le brinde lo que hasta ahora no pudo tener.	21	m#
+15	Mota	f	2006-03-01	Castrada, vacunada y desparasitada. 
+Abandonada y atada en la puerta de Zoonosis, desnutrida y con sarna caracter muy cariñoso, adaptable, le gusta jugar y comparte la vida perfectamente con otros animales.	22	m#
+16	Lito	m	2009-03-01	Castrado vacunado y desparasitado.
+Muy desnutrido iba deambulando por la calle en muy mal estado. Lita una voluntaria de U.V.A lo miro y le pregunto... adonde vas??? El comenzo a seguirla hasta Zoonosis... se le hizo tratamiento, y hoy es un perro totalmente sano y adaptado para vivir con la gente	23	m#
+17	Linda	f	2008-03-01	Castrada vacunada y desparasitada.
+Muy buen caracter. Es muy juguetona.
+Fue rescatada del Puerto de Frutos por una voluntaria de U.V.A ella necesita un hogar como todos los demas y mucho cariño!	24	m#
+18	Olivia	f	2008-03-01	Castrada vacunada y desparasitada. 
+Muy dulce. Muy buen caracter y le encanta jugar con otros perros.
+Fue abandonada en muy mal estado de salud en el Centro de Zoonosis. Hoy es una perrita muy saludable y merece tener un hogar donde la quieran mucho! No le importa nada que esta coja en una pata. Y seguro a ti tampoco!	25	l#
+19	Negra	f	2009-03-01	Castrada vacunada y desparasitada. Buen caracter, sociable.
+Fue rescatada por una Voluntaria en situacion de riesgo. Hoy esta a salvo y necesita urgente un hogar!	26	m#
+20	Antifaz	m	2006-03-01	Castrado vacunado y desparasitado. Caracter dulce y sociable.
+Fue abandonado porque sus dueños se mudaron y no quisieron llevarlo con elllos, lo dejaron en la via publica, U.V.A lo recogio y como es muy dulce y sociable sabemos que pronto alguien le dara el amor que siempre se merecio!	27	l#
+21	El gordo	m	2006-03-01	Castrado vacunado y desparasitado. 
+Caracter sociable.
+Fue abandonado en zoonosis como tantos otros en malas condiciones de salud, aqui se lo curo atendio y como se puede ver engordo!	28	l
+
+
+
+
+
+
+
+
