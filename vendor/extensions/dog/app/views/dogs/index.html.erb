@@ -1,20 +1,61 @@
-<div id="main" class="clearfix">
     <div id="content">
-        <table>
-            <% @dogs.each do |dog| %>
-            <tr>
-                <td>
-                    <%= image_tag dog.picture_file_name, :width => '100' %>
-                </td>
-                <td>
-                    <%=h dog.name %>
-                    <br/>
-                    AGE <%=h dog.age %>| GENDER <%=h dog.long_gender %>| SIZE <%= dog.long_size %>
-                    <br/>
-                    <%=h dog.description %>
-                </td>
-            </tr>
-            <% end %>
-        </table>
+        <h1>Adoptame</h1>
+        <div id="formwrapper">
+            <form action="post">
+                <select name="gender">
+                    <option>Select gender</option>
+                </select>
+                <select name="age">
+                    <option>Select age</option>
+                </select>
+                <select name="breed">
+                    <option>Select size</option>
+                </select>
+                <input name="submit" type="button" value="Filter" class="submitbutton" />
+            </form>
+        </div><% @dogs.each do |dog| %>
+        <div class="entry">
+            <h2><%=h dog.name %></h2>
+            <%= image_tag dog.picture_file_name, :width => '100', :class => 'alignleft' %>
+            <p>
+                <%=h dog.description %>
+            </p>
+            <p class="posted">
+            Posted on <%=h dog.created_at %>  <span>|</span>
+            <%=h dog.age %>| <%=h dog.long_gender %>| <%= dog.long_size %>
+        </div>
+        <% end %>
     </div>
+    <!--div id="sidebar">
+        <h1>Adoption</h1>
+        <ul id="submenu">
+            <li>
+                <a href="/">How does it work?</a>
+            </li>
+            <li>
+                <a href="/">Success stories</a>
+            </li>
+        </ul>
+        <div class="box">
+            <h3>Contact us if you have any questions</h3>
+            <p>
+                <strong>Telephone:</strong>
+                4512-4568 
+                <br/>
+                <strong>E-mail</strong>
+                info@adress.com
+            </p>
+        </div>
+        <div class="box">
+            <h3>Adopciones</h3>
+            <p>
+                Hay gatos y perros, que esperan por un hogar. Todos los dias de 08:00 a 14:00 hs. (Inclusive los fines de semana)
+            </p>
+            <p>
+                <strong>Centro de Salud Animal y Zoonosis de Tigre</strong>
+                <br/>
+                Pueyrredón 21, 1 (e/vieja ruta 197 y la Av. C. Larralde) Barrio San José, Tigre
+            </p>
+        </div>
+    </div-->
 </div>

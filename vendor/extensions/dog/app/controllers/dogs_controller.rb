@@ -1,5 +1,5 @@
 class DogsController < ApplicationController
-  radiant_layout 'Normal'
+  radiant_layout 'TwoColumns'
   no_login_required
   
   # GET /dogs

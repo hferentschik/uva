@@ -47,8 +47,8 @@ body {
 
 #sidebar {
     float: right;
-    width: 245px;
-    padding: 23px 15px 30px 15px;
+    width: 275px;
+    padding: 23px 0 30px 0;
     margin-top: 41px;
     border-top: 1px solid #dfe0e1;
     background: url(../images/bg-rightcol.gif) repeat-x left top;
@@ -171,7 +171,7 @@ ul#mainmenu li.selected a {
 ul#submenu {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 0 15px 50px 15px;
 }
 
 ul#submenu li {
@@ -195,7 +195,7 @@ ul#submenu li.selected a {
 
 /* Side bar*/
 #sidebar h1 {
-    padding: 0;
+    padding: 0 15px 0 15px;
     font-size: 1.33em;
 }
 
@@ -284,57 +284,83 @@ ul#submenu li.selected a {
     border: none;
 }
 
-/* TEXT PAGE */
+/* images*/
+.aligncenter {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* TEXT PAGE, LISPAGE */
 #main-text {
     padding: 20px 0px 0px 0px;
 }
 
 .entry {
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #dfe0e1;
+    padding: 0 0 10px 0;
 }
 
-.entry .info {
-    margin-top: 1em;
-    font-size: 1em;
-}
-
-.entry p {
-    font-size: 1.1em;
+.entry img {
+    margin-top: 3px;
 }
 
 .posted {
     color: #918C7E;
-    font-family: "lucida grande", arial, helvetica, verdana, sans-serif;
-    font-size: 10px;
-    margin: -3px 0 5px;
-    padding: 0px;
+    font-family: Arial, helvetica, verdana, sans-serif;
+    font-size: 0.8em;
+    margin: 0 0 15px 0;
+    padding: 0;
 }
 
-.posted em {
-    color: #451811;
-    font-style: italic;
-    margin: 0px 6px;
+.posted span {
+    padding: 0 9px;
+}
+
+#formwrapper {
+    border: 1px solid #e8eaec;
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 0 0 30px 0;
+}
+
+#formwrapper select {
+    width: 150px;
+}
+
+.submitbutton {
+    background: #eb872f;
+    border: 1px solid #eb872f;
+    color: #fff;
     font-weight: bold;
-}
-
-.posted img {
-    background: transparent none repeat scroll 0 0;
-    border: medium none;
-    margin: 0 4px -5px 2px;
-    text-decoration: none;
 }
 
 /*---STYLES---*/
 .box {
     padding: 15px;
-    border: 1px solid #dbd6d1;
-    background-color: #efedeb;
+    border: 1px solid #e8eaec;
+    background: #f9f9f9;
     margin-bottom: 20px;
 }
 
 .box h3 {
-    font-size: 18px;
-    margin-bottom: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.box p {
+    font-size: 0.88em;
 }
 
 .box input {
