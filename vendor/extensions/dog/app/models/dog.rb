@@ -4,6 +4,11 @@ class Dog < ActiveRecord::Base
   
   def picture_file_name
     pic = Asset.find :first, :conditions => { :id => self.asset_id }
+    '../assets/' + self.asset_id.to_s + '/' + pic.basename + '.' + pic.extension
+  end
+  
+   def picture_file_name_list
+    pic = Asset.find :first, :conditions => { :id => self.asset_id }
     '../assets/' + self.asset_id.to_s + '/' + pic.basename + '_list.' + pic.extension
   end
   
