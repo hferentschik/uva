@@ -2,12 +2,13 @@ class Dog < ActiveRecord::Base
   validates_length_of :name, :minimum => 1, :message => 'should be at least one character long'
   validates_length_of :description, :minimum => 5, :message => 'should be at least five characters'
   
+  # TODO remove this methods and hook into the asset controller directly. 
   def picture_file_name
     pic = Asset.find :first, :conditions => { :id => self.asset_id }
     '../assets/' + self.asset_id.to_s + '/' + pic.basename + '.' + pic.extension
   end
   
-   def picture_file_name_list
+  def picture_file_name_list
     pic = Asset.find :first, :conditions => { :id => self.asset_id }
     '../assets/' + self.asset_id.to_s + '/' + pic.basename + '_list.' + pic.extension
   end
@@ -43,6 +44,6 @@ class Dog < ActiveRecord::Base
   end
   
   def Dog.possible_ages
-    (0..8).collect { |i| [i,i]  } + [['>8', 9]]
+   (0..8).collect { |i| [i,i]  } + [['>8', 9]]
   end
 end

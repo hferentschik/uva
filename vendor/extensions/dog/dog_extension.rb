@@ -25,6 +25,7 @@ class DogExtension < Radiant::Extension
     
   def activate
     admin.tabs.add "Dog", "/dogsadmin", :after => "Layouts", :visibility => [:all]
+    Page.send :include, DogTags
   end
   
   def deactivate
