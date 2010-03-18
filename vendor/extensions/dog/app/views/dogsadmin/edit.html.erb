@@ -1,6 +1,8 @@
-<h1>Editing dog</h1>
+<h1>
+  Editing dog
+</h1>
 
-<% form_for(@dog , :url => {:action => "update"} ) do |f| %>
+<% form_for(@dog , :url => {:action => @action} ) do |f| %>
 
   <p>
     <%= f.label :name %><br />
@@ -22,16 +24,20 @@
     <%= f.label :size %><br />
     <%= f.select :size, [['Pequeño', 's'], ['Mediano', 'm'], ['Largo', 'l']] %>
   </p>
+  
+  <% if @action == 'update' %>
   <p>
     <%= f.label :adopted %>
     <%= f.check_box :adopted %>
   </p>
+  <% end %>
+  
   <p>
     <%= f.label :description %><br />
     <%= f.text_area :description %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit @action.capitalize %>
   </p>
 <% end %>
 

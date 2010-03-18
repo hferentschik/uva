@@ -27,9 +27,10 @@ class DogsadminController < ApplicationController
   # GET /dogs/new.xml
   def new
     @dog = Dog.new
+    @action = 'create'
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :template => 'dogsadmin/edit'}
       format.xml  { render :xml => @dog }
     end
   end
@@ -37,6 +38,7 @@ class DogsadminController < ApplicationController
   # GET /dogs/1/edit
   def edit
     @dog = Dog.find(params[:id])
+    @action = 'update'
   end
 
   # POST /dogs
