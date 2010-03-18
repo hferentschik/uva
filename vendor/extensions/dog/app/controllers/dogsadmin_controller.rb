@@ -3,7 +3,7 @@ class DogsadminController < ApplicationController
   # GET /dogs
   # GET /dogs.xml
   def index
-    @dogs = Dog.not_adopted
+    @dogs = Dog.find :all, :order => 'name'
     @admin = true
 
     respond_to do |format|
