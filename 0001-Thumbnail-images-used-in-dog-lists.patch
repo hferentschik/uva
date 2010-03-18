@@ -1,0 +1,74 @@
+From cbde97b9627cfaff2e900a545650a9e0b6151395 Mon Sep 17 00:00:00 2001
+From: Fredrik Rubensson <fredrik@eldfluga.se>
+Date: Thu, 18 Mar 2010 09:40:22 +0100
+Subject: [PATCH] Thumbnail images used in dog lists.
+
+---
+ vendor/extensions/dog/app/models/dog.rb            |   19 +++++++++++++++----
+ .../extensions/dog/app/views/dogs/index.html.erb   |    2 +-
+ .../dog/app/views/dogsadmin/index.html.erb         |    2 +-
+ 3 files changed, 17 insertions(+), 6 deletions(-)
+
+diff --git a/vendor/extensions/dog/app/models/dog.rb b/vendor/extensions/dog/app/models/dog.rb
+index 257a7e3..854346a 100644
+--- a/vendor/extensions/dog/app/models/dog.rb
++++ b/vendor/extensions/dog/app/models/dog.rb
+@@ -4,14 +4,25 @@ class Dog < ActiveRecord::Base
+   
+   # TODO remove this methods and hook into the asset controller directly. 
+   def picture_file_name
+-    pic = Asset.find :first, :conditions => { :id => self.asset_id }
+-    '../assets/' + self.asset_id.to_s + '/' + pic.basename + '.' + pic.extension
++    asset_path + asset.asset_file_name
++  end
++  
++  def thumbnail_file_name
++    asset_path + asset.basename + '_thumbnail.png'
++  end
++  
++  def asset_path
++    '../assets/' + self.asset_id.to_s + '/' 
++  end
++  
++  def asset
++    Asset.find :first, :conditions => { :id => self.asset_id }
+   end
+   
+   def picture_file_name_list
+-    pic = Asset.find :first, :conditions => { :id => self.asset_id }
+-    '../assets/' + self.asset_id.to_s + '/' + pic.basename + '_list.' + pic.extension
++    asset_path + asset.basename + '_list.' + asset.extension
+   end
++  # END TODO
+   
+   def age 
+     if birthdate.nil?
+diff --git a/vendor/extensions/dog/app/views/dogs/index.html.erb b/vendor/extensions/dog/app/views/dogs/index.html.erb
+index 605d972..91b4ee2 100644
+--- a/vendor/extensions/dog/app/views/dogs/index.html.erb
++++ b/vendor/extensions/dog/app/views/dogs/index.html.erb
+@@ -18,7 +18,7 @@
+     <table>
+         <tr>
+             <td>
+-                <a href="/images/<%= dog.picture_file_name %>" rel="lightbox" title="<%= dog.name %>"><%= image_tag dog.picture_file_name_list, :width => '100', :class => 'alignleft', :alt => dog.name %></a>
++                <a href="/images/<%= dog.thumbnail_file_name %>" rel="lightbox" title="<%= dog.name %>"><%= image_tag dog.picture_file_name_list, :width => '100', :class => 'alignleft', :alt => dog.name %></a>
+             </td>
+             <td valign="top">
+                 <p>
+diff --git a/vendor/extensions/dog/app/views/dogsadmin/index.html.erb b/vendor/extensions/dog/app/views/dogsadmin/index.html.erb
+index f37ef58..9ffe55a 100644
+--- a/vendor/extensions/dog/app/views/dogsadmin/index.html.erb
++++ b/vendor/extensions/dog/app/views/dogsadmin/index.html.erb
+@@ -5,7 +5,7 @@
+ 
+ <% @dogs.each do |dog| %>
+   <tr>
+-    <td><%= image_tag dog.picture_file_name, :width => '100' %></td>
++    <td><%= image_tag dog.thumbnail_file_name, :width => '100' %></td>
+     <td>
+       <%=h dog.name %><br/>
+       AGE <%=h dog.age%> | GENDER <%=h dog.long_gender %> | SIZE <%= dog.long_size %><br/>
+-- 
+1.6.5.2
+
