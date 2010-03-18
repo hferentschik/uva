@@ -51,7 +51,7 @@ class Dog < ActiveRecord::Base
   end
   
   def Dog.not_adopted
-    find :all, :conditions => {:adopted => false}
+    find :all, :conditions => {:adopted => false}, :order => 'name'
   end
   
   def Dog.possible_ages
