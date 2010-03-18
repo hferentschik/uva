@@ -4,11 +4,19 @@ class Dog < ActiveRecord::Base
   
   # TODO remove this methods and hook into the asset controller directly. 
   def picture_file_name
-    asset_path + asset.asset_file_name
+    if asset
+      asset_path + asset.asset_file_name
+    else
+      ''
+    end
   end
   
   def thumbnail_file_name
-    asset_path + asset.basename + '_thumbnail.png'
+    if asset
+      asset_path + asset.basename + '_thumbnail.png'
+    else
+      ''
+    end
   end
   
   def asset_path
@@ -20,7 +28,11 @@ class Dog < ActiveRecord::Base
   end
   
   def picture_file_name_list
-    asset_path + asset.basename + '_list.' + asset.extension
+    if asset
+      asset_path + asset.basename + '_list.' + asset.extension
+    else
+      ''
+    end
   end
   # END TODO
   
