@@ -5,7 +5,7 @@
 
 <% @dogs.each do |dog| %>
   <tr>
-    <td><%= image_tag dog.picture_file_name, :width => '100' %></td>
+    <td><%= image_tag dog.thumbnail_file_name, :width => '100' %></td>
     <td>
       <%=h dog.name %><br/>
       AGE <%=h dog.age%> | GENDER <%=h dog.long_gender %> | SIZE <%= dog.long_size %><br/>

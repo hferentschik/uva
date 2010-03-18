@@ -4,14 +4,25 @@ class Dog < ActiveRecord::Base
   
   # TODO remove this methods and hook into the asset controller directly. 
   def picture_file_name
-    pic = Asset.find :first, :conditions => { :id => self.asset_id }
-    '../assets/' + self.asset_id.to_s + '/' + pic.basename + '.' + pic.extension
+    asset_path + asset.asset_file_name
+  end
+  
+  def thumbnail_file_name
+    asset_path + asset.basename + '_thumbnail.png'
+  end
+  
+  def asset_path
+    '../assets/' + self.asset_id.to_s + '/' 
+  end
+  
+  def asset
+    Asset.find :first, :conditions => { :id => self.asset_id }
   end
   
   def picture_file_name_list
-    pic = Asset.find :first, :conditions => { :id => self.asset_id }
-    '../assets/' + self.asset_id.to_s + '/' + pic.basename + '_list.' + pic.extension
+    asset_path + asset.basename + '_list.' + asset.extension
   end
+  # END TODO
   
   def age 
     if birthdate.nil?
