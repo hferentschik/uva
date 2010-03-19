@@ -53,10 +53,14 @@ class Dog < ActiveRecord::Base
   end
   
   def long_size
-    if size == 'l'
-      'Largo'
-    elsif size == 's'
-      'Pequeño'
+    if size == 'l' 
+      'Grande'
+    elsif size == 's' && gender == 'f'
+      'Pequeña'
+    elsif size == 's' && gender == 'm'
+      'Pequeño'  
+    elsif size == 'm' && gender == 'f'
+      'Mediana'      
     else
       'Mediano'
     end

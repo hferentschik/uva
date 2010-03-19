@@ -2,15 +2,15 @@
 <div id="formwrapper">
     <form action="post">
         <select name="gender">
-            <option>Select gender</option>
+            <option>GÉNERO</option>
         </select>
         <select name="age">
-            <option>Select age</option>
+            <option>EDAD</option>
         </select>
         <select name="breed">
-            <option>Select size</option>
+            <option>TAMAÑO</option>
         </select>
-        <input name="submit" type="button" value="Filter" class="submitbutton" />
+        <input name="submit" type="button" value="Filtrar" class="submitbutton" />
     </form>
 </div><% @dogs.each do |dog| %>
 <div class="entry">
@@ -28,8 +28,13 @@
         </tr>
     </table>
     <p class="posted">
-    Posted on <%=h dog.created_at.strftime("%m/%d/%Y") %><span>|</span>
-    <%=h dog.age %>| <%=h dog.long_gender %>| <%= dog.long_size %>
+    <strong>GÉNERO: </strong><%=h dog.long_gender %>
+	<span>|</span>
+	<strong>EDAD: </strong><%=h dog.age %>
+	<span>|</span>
+	<strong>TAMAÑO: </strong><%=h dog.long_size %>
+	<span>|</span>
+    Posted on <%=h dog.created_at.strftime("%m/%d/%Y") %>
 </div>
 <% end %>
 <% content_for :sidebar do %>
