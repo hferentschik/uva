@@ -28,7 +28,7 @@ module DogTags
     content.gsub!("January", "Enero")
     content.gsub!("February", "Febrero")
     content.gsub!("March", "Marzo")
-    content.gsub!("April", "April")
+    #content.gsub!("April", "April")
     content.gsub!("May", "Mayo")
     content.gsub!("June", "Junio")
     content.gsub!("July", "Julio")
