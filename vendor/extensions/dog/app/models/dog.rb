@@ -62,11 +62,20 @@ class Dog < ActiveRecord::Base
     end
   end
   
-  def Dog.not_adopted
-    find :all, :conditions => {:adopted => false}, :order => 'name'
+  def Dog.not_adopted conditions
+    notadopted = { :adopted => false }
+    find :all, :conditions => conditions.merge( notadopted ), :order => 'name'
   end
   
   def Dog.possible_ages
    (0..8).collect { |i| [i,i]  } + [['>8', 9]]
+  end
+  
+  def Dog.possible_genders
+    [['Hembra', 'f'], ['Macho', 'm']]
+  end
+  
+  def Dog.possible_sizes
+    [['Pequeño', 's'], ['Mediano', 'm'], ['Largo', 'l']]
   end
 end

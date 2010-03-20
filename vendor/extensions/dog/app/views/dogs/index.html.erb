@@ -1,18 +1,16 @@
 <h1>Adoptame</h1>
 <div id="formwrapper">
-    <form action="post">
-        <select name="gender">
-            <option>Select gender</option>
-        </select>
-        <select name="age">
-            <option>Select age</option>
-        </select>
-        <select name="breed">
-            <option>Select size</option>
-        </select>
-        <input name="submit" type="button" value="Filter" class="submitbutton" />
-    </form>
-</div><% @dogs.each do |dog| %>
+    
+   <% form_tag '/dogs', :method => :get do |f| %>
+      <%= select_tag :gender, options_for_select( [['Select gender', nil]] + Dog.possible_genders ) %> 
+      <%= select_tag :age, options_for_select( [['Select age', nil]] + Dog.possible_ages ) %>
+      <%= select_tag :size, options_for_select( [['Select size', nil]] + Dog.possible_sizes ) %> 
+      <%= submit_tag 'Filter', :class => 'submitbutton' %>
+   <% end %>
+    
+</div>
+
+<% @dogs.each do |dog| %>
 <div class="entry">
     <h2><a name="<%=h dog.name %>"></a><%=h dog.name %></h2>
     <table>

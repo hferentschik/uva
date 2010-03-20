@@ -10,7 +10,7 @@
   </p>
   <p>
     <%= f.label :gender %><br />
-    <%= f.select :gender, [['Hembra', 'f'], ['Macho', 'm']] %>
+    <%= f.select :gender, Dog.possible_genders %>
   </p>
   <p>
     <%= f.label :age %><br />
@@ -22,7 +22,7 @@
   </p>
   <p>
     <%= f.label :size %><br />
-    <%= f.select :size, [['Pequeño', 's'], ['Mediano', 'm'], ['Largo', 'l']] %>
+    <%= f.select :size, Dog.possible_sizes %>
   </p>
   
   <% if @action == 'update' %>
