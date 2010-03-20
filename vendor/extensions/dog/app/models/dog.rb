@@ -67,12 +67,16 @@ class Dog < ActiveRecord::Base
   end
   
   def Dog.not_adopted conditions
+    order = 'name'
+    if !conditions[:birthdate].nil?
+        order = 'birthdate,' + order
+    end
     notadopted = { :adopted => false }
-    find :all, :conditions => conditions.merge( notadopted ), :order => 'name'
+    find :all, :conditions => conditions.merge( notadopted ), :order => order
   end
   
   def Dog.possible_ages
-   (0..8).collect { |i| [i,i]  } + [['>8', 9]]
+    [['<1', 1]] + [['<2', 2]] + [['<3', 3]] + [['<4', 4]] + [['<5', 5]] + [['<6', 6]] + [['<7', 7]] + [['<8', 8]] + [['<9', 9]] + [['<10', 10]] + [['10+', 15]] 
   end
   
   def Dog.possible_genders
@@ -80,6 +84,6 @@ class Dog < ActiveRecord::Base
   end
   
   def Dog.possible_sizes
-    [['Pequeño', 's'], ['Mediano', 'm'], ['Largo', 'l']]
+    [['Pequeño', 's'], ['Mediano', 'm'], ['Grande', 'l']]
   end
 end

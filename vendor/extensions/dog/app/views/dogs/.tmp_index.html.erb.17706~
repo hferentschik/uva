@@ -1,0 +1,41 @@
+<h1>Adoptame</h1>
+<div id="formwrapper">
+    
+   <% form_tag '/dogs', :method => :get do |f| %>
+      <%= select_tag :gender, options_for_select( [['GÉNERO', nil]] + Dog.possible_genders ) %> 
+      <%= select_tag :age, options_for_select( [['EDAD', nil]] + Dog.possible_ages ) %>
+      <%= select_tag :size, options_for_select( [['TAMAÑO', nil]] + Dog.possible_sizes ) %> 
+      <%= submit_tag 'Filter', :class => 'submitbutton' %>
+   <% end %>
+    
+</div>
+
+<% @dogs.each do |dog| %>
+
+<div class="entry">
+    <h2><a name="<%=h dog.name %>"></a><%=h dog.name %></h2>
+    <table>
+        <tr>
+            <td>
+                <a href="/images/<%= dog.picture_file_name %>" rel="lightbox" title="<%= dog.name %>"><%= image_tag dog.picture_file_name_list, :width => '100', :class => 'alignleft', :alt => dog.name %></a>
+            </td>
+            <td valign="top">
+                <p>
+                    <%=h dog.description %>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <p class="posted">
+    <strong>GÉNERO: </strong><%=h dog.long_gender %>
+	<span>|</span>
+	<strong>EDAD: </strong><%=h dog.age %>
+	<span>|</span>
+	<strong>TAMAÑO: </strong><%=h dog.long_size %>
+	<span>|</span>
+    Publicado por <%=h dog.created_at.strftime("%m/%d/%Y") %>
+</div>
+<% end %>
+<% content_for :sidebar do %>
+    <r:snippet name="adoption_sidebar" />    
+<% end %>

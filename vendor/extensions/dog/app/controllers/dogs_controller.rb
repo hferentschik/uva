@@ -9,7 +9,7 @@ class DogsController < ApplicationController
     assign_condition :gender
     assign_condition :size
     assign_birthdate_condition
-
+    
     @dogs = Dog.not_adopted @conditions
     respond_to do |format|
       format.html # index.html.erb
@@ -27,7 +27,7 @@ class DogsController < ApplicationController
     if !params[:age].nil? && !params[:age].empty?
       searchedyear = DateTime.now.year - params[:age].to_i
       startdate = searchedyear.to_s + '-01-01'
-      enddate = searchedyear.to_s + '-12-31'
+      enddate = DateTime.now.year.to_s + '-12-31'
       @conditions[:birthdate] = (startdate..enddate)
     end
   end
