@@ -1,4 +1,4 @@
-<h1>Adoptame</h1>
+<h1>Adóptame</h1>
 <div id="formwrapper">
    <% form_tag '/dogs', :method => :get do |f| %>
       <%= select_tag :gender, options_for_select( [['GÉNERO', nil]] + Dog.possible_genders, :selected => params[:gender] ) %> 
