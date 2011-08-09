@@ -5,6 +5,8 @@ ENV['GEM_PATH'] = "/home/uvatigre/ruby/gems:/usr/lib/ruby/gems/1.8"
 # you don't control web/app server and can't set it the proper way
 # ENV['RAILS_ENV'] ||= 'production'
 
+RADIANT_GEM_VERSION = '0.8.1' unless defined? RADIANT_GEM_VERSION 
+
 # Specifies gem version of Rails to use when vendor/rails is not present
 require File.join(File.dirname(__FILE__), 'boot')
 
