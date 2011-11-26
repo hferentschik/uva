@@ -11,8 +11,9 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 development:
-  adapter: mysql
+  adapter: jdbcmysql
   database: uva_development
+  encoding: utf8
   username: uva
   password: uva
   host: 127.0.0.1

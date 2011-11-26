@@ -32,15 +32,15 @@ ActiveRecord::Schema.define(:version => 20100304190300) do
   add_index "config", ["key"], :name => "key", :unique => true
 
   create_table "dogs", :force => true do |t|
-    t.string   "name",                           :null => false
-    t.string   "gender",                         :null => false
-    t.date     "birthdate",                      :null => false
-    t.string   "description",                    :null => false
+    t.string   "name",                                           :null => false
+    t.string   "gender",                                         :null => false
+    t.date     "birthdate",                                      :null => false
+    t.string   "description", :limit => 2000,                    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "asset_id"
     t.string   "size"
-    t.boolean  "adopted",     :default => false
+    t.boolean  "adopted",                     :default => false
   end
 
   create_table "extension_meta", :force => true do |t|
