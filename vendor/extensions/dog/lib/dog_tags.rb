@@ -4,7 +4,7 @@ module DogTags
   desc "Creates a random set of dogs"
   tag "random_dogs" do |tag|
     content = '<center><ul>'
-    dogs = Dog.find(:all, :order => 'RAND()', :limit => 6)
+    dogs = Dog.find(:all, :conditions => ["adopted = 0"],:order => 'RAND()', :limit => 6)
     for dog in dogs do
       content << '<li>'
       content << '   <a href="/dogs#' + dog.name + '" title="' + dog.name + '">'
