@@ -12,6 +12,17 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 require 'radius'
 
+if Gem::VERSION >= "1.3.6" 
+    module Rails
+        class GemDependency
+            def requirement
+                r = super
+                (r == Gem::Requirement.default) ? nil : r
+            end
+        end
+    end
+end
+
 Radiant::Initializer.run do |config|
 
   #config.action_controller.relative_url_root = "/~uvatigre/uva-tigre"
